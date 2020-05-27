@@ -1,0 +1,6 @@
+apiVersion: container/v1
+kind: StepContainer
+inherit: ../hack/defs/aws-python
+title: Describe AWS ELB v2 load balancers
+description: >
+  This task describes the ELB v2 load balancers in a given account and region.
