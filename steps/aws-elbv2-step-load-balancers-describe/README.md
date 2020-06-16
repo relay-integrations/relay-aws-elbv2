@@ -1,4 +1,4 @@
-# elbv2-describe-load-balancers
+# aws-elbv2-step-load-balancers-describe
 
 This [AWS ELB v2](https://aws.amazon.com/elasticloadbalancing/) step container lists the ELB v2 load balancers
 in an AWS account and region.
@@ -23,7 +23,7 @@ in an AWS account and region.
 steps:
 # ...
 - name: elbv2-describe-load-balancers
-  image: projectnebula/elbv2-describe-load-balancers
+  image: relaysh/aws-elbv2-step-load-balancers-describe
   spec:
     aws:
       connection: !Connection { type: aws, name: my-aws-account }

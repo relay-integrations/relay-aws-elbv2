@@ -8,10 +8,10 @@ The following are supported actions:
 
 |   Type    |  Name              |
 |-----------|--------------------|
-| Step      | [elbv2-delete-load-balancers](/steps/elbv2-delete-load-balancers)  | 
-| Step      | [elbv2-describe-load-balancers](/steps/elbv2-describe-load-balancers) |
-| Step      | [elbv2-describe-target-groups](/steps/elbv2-describe-target-groups)  | 
-| Step      | [elbv2-describe-targets](/steps/elbv2-describe-targets)  |  
+| Step      | [aws-elbv2-step-load-balancers-delete](/steps/aws-elbv2-step-load-balancers-delete)  | 
+| Step      | [aws-elbv2-step-load-balancers-describe](/steps/aws-elbv2-step-load-balancers-describe) |
+| Step      | [aws-elbv2-step-target-groups-describe](/steps/aws-elbv2-step-target-groups-describe)  | 
+| Step      | [aws-elbv2-step-targets-describe](/steps/aws-elbv2-step-targets-describe)  |  
 
 
 ## Contributing

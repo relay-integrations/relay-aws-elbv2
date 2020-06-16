@@ -1,4 +1,4 @@
-# elbv2-describe-targets
+# aws-elbv2-step-targets-describe
 
 This [AWS ELB v2](https://aws.amazon.com/elasticloadbalancing/) step container lists the ELB v2 targets given a list of target groups. 
 
@@ -24,7 +24,7 @@ This [AWS ELB v2](https://aws.amazon.com/elasticloadbalancing/) step container l
 steps:
 # ...
 - name: elbv2-describe-targets
-  image: projectnebula/elbv2-describe-targets
+  image: relaysh/aws-elbv2-step-targets-describe
   spec:
     aws:
       connection: !Connection { type: aws, name: my-aws-account }

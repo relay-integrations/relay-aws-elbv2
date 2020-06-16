@@ -1,4 +1,4 @@
-# elbv2-describe-target-groups
+# aws-elbv2-step-target-groups-describe
 
 This [AWS ELB v2](https://aws.amazon.com/elasticloadbalancing/) step container lists the ELB v2 target groups in a provided region.
 
@@ -26,7 +26,7 @@ If no load balancers are specified, all target groups in the account will be out
 steps:
 # ...
 - name: elbv2-describe-target-groups
-  image: projectnebula/elbv2-describe-target-groups
+  image: relaysh/aws-elbv2-step-target-groups-describe
   spec:
     aws:
       connection: !Connection { type: aws, name: my-aws-account }

@@ -1,4 +1,4 @@
-# elbv2-delete-load-balancers
+# aws-elbv2-step-load-balancers-delete
 
 This [AWS ELB](https://aws.amazon.com/elasticloadbalancing/) step container requests that the a
 set of given Elastic Loadbalancers v2 terminate immediately.
@@ -21,7 +21,7 @@ None
 steps:
 # ...
 - name: elbv2-delete-load-balancers
-  image: projectnebula/elbv2-delete-load-balancers
+  image: relaysh/aws-elbv2-step-load-balancers-delete
   spec:
     aws:
       connection: !Connection {type: aws, name: my-aws-account}
