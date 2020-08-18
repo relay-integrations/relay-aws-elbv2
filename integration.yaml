@@ -26,7 +26,7 @@ summary: Amazon Web Services Elastic Load Balancer v2
 
 # A paragraph or two describing what this integration does. Optional. Markdown.
 description: |
-    Integration with Amazon Web Services' ELB v2 service.
+    Amazon Elastic Load Balancing (ELB) is an automatic application traffic distributor.
 
 # License information. Optional. If not specified, this integration is assumed
 # to be unlicensed proprietary code. Otherwise, must be a valid SPDX License
@@ -46,3 +46,6 @@ homepage: https://github.com/relay-integrations/relay-aws-elbv2
 # URL to this integration's source code. Optional. If the homepage is a GitHub
 # link, may be inferred automatically.
 source: git://github.com/relay-integrations/relay-aws-elbv2.git
+
+tags:
+  - aws
