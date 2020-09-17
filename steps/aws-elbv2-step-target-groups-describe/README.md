@@ -4,22 +4,6 @@ This [AWS ELB v2](https://aws.amazon.com/elasticloadbalancing/) step container l
 
 If no load balancers are specified, all target groups in the account will be output.
 
-## Specification
-
-| Setting | Child setting | Data type | Description | Default | Required |
-|---------|---------------|-----------|-------------|---------|----------|
-| `aws` || mapping | A mapping of AWS account configuration. | None | True |
-|| `connection` | AWS Connection | Relay Connection for the AWS account. Use the Connection sidebar to configure the AWS Connection | None | True |
-|| `region` | string | The AWS region to use (for example, `us-west-2`). | None | True |
-| `loadbalancers` || array of mappings | array of ELBv2 objects. See [elbv2-describe-load-balancers](../elbv2-describe-load-balancers/docs/v1.md) for examples | None | False | 
-| `loadbalancerARNs` || array of strings | List of ELBv2 load balancer ARNs | None | False |
-
-## Outputs
-
-| Name | Data type | Description |
-|------|-----------|-------------|
-| `targetgroups`  | array of mappings | List of all target groups |
-
 ## Example 1: Get all Target Groups
 
 ```yaml

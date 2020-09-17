@@ -3,20 +3,6 @@
 This [AWS ELB v2](https://aws.amazon.com/elasticloadbalancing/) step container lists the ELB v2 load balancers
 in an AWS account and region.
 
-## Specification
-
-| Setting | Child setting | Data type | Description | Default | Required |
-|---------|---------------|-----------|-------------|---------|----------|
-| `aws` || mapping | A mapping of AWS account configuration. | None | True |
-|| `connection` | AWS Connection | Relay Connection for the AWS account. Use the Connection sidebar to configure the AWS Connection | None | True |
-|| `region` | string | The AWS region to use (for example, `us-west-2`). | None | True |
-
-## Outputs
-
-| Name | Data type | Description |
-|------|-----------|-------------|
-| `loadbalancers` | array of mappings | The ELBs v2 in the given region. |
-
 ## Example
 
 ```yaml
