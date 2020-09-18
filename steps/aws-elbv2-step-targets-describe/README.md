@@ -2,22 +2,6 @@
 
 This [AWS ELB v2](https://aws.amazon.com/elasticloadbalancing/) step container lists the ELB v2 targets given a list of target groups. 
 
-## Specification
-
-| Setting | Child setting | Data type | Description | Default | Required |
-|---------|---------------|-----------|-------------|---------|----------|
-| `aws` || mapping | A mapping of AWS account configuration. | None | True |
-|| `connection` | AWS Connection | Relay Connection for the AWS account. Use the Connection sidebar to configure the AWS Connection | None | True |
-|| `region` | string | The AWS region to use (for example, `us-west-2`). | None | True |
-| `targetgroups` || array of mappings | array of `target group` objects. See [elbv2-describe-target-groups](../elbv2-describe-target-groups/docs/v1.md) for examples | None | One of `targetgroups` or `targetgroupARNs` must be provided | 
-| `targetgroupARNs` || array of strings | List of target group ARNs | None | One of `targetgroups` or `targetgroupARNs` must be provided |
-
-## Outputs
-
-| Name | Data type | Description |
-|------|-----------|-------------|
-| `targets`  | dict of mappings | Dictionary of target groups as keys and their targets | 
-
 ## Example 1: Passing a list of `targetgroups` from a previous step
 
 ```yaml

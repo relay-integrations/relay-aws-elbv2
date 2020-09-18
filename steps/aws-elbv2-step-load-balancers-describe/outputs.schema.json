@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "loadbalancers": {
+      "type": "array",
+      "description": "The ELBs v2 in the given region.",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": ["loadbalancers"],
+  "additionalProperties": false
+}
