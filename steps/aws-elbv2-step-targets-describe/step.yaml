@@ -21,7 +21,7 @@ publish:
 examples:
 - summary: Describe targets from a target group in an AWS account
   content:
-    apiVersion: 1
+    apiVersion: v1
     kind: Step
     name: elbv2-describe-targets
     image: relaysh/aws-elbv2-step-targets-describe

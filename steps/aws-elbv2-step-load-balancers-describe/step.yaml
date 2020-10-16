@@ -21,7 +21,7 @@ publish:
 examples:
 - summary: Describe the load balancers in an AWS account
   content:
-    apiVersion: 1
+    apiVersion: v1
     kind: Step
     name: elbv2-describe-load-balancers
     image: relaysh/aws-elbv2-step-load-balancers-describe
