@@ -4,47 +4,6 @@ This [AWS ELB v2](https://aws.amazon.com/elasticloadbalancing/) step container l
 
 If no load balancers are specified, all target groups in the account will be output.
 
-## Example 1: Get all Target Groups
-
-```yaml
-steps:
-# ...
-- name: elbv2-describe-target-groups
-  image: relaysh/aws-elbv2-step-target-groups-describe
-  spec:
-    aws:
-      connection: !Connection { type: aws, name: my-aws-account }
-      region: us-west-2
-```
-
-## Example 2: Passing a list of `loadbalancers` from a previous step
-
-```yaml
-steps:
-# ...
-- name: elbv2-describe-target-groups
-  image: projectnebula/elbv2-describe-target-groups
-  spec:
-    aws:
-      connection: !Connection { type: aws, name: my-aws-account }
-      region: us-west-2
-    loadbalancers: !Output {from: describe-ELBv2-load-balancers, name: loadbalancers}
-```
-
-## Example 3: Passing a list of `loadbalancerARNs`
-```yaml
-steps:
-# ...
-- name: elbv2-describe-target-groups
-  image: projectnebula/elbv2-describe-target-groups
-  spec:
-    aws:
-      connection: !Connection { type: aws, name: my-aws-account }
-      region: us-west-2
-    loadbalancerARNs:
-    - arn:aws:elasticloadbalancing:us-east-1:180094860577:loadbalancer/app/test1/ad652aa6a13aa6da
-```
-
 ## Example Output
 Example output for `targetgroups`:
 ```

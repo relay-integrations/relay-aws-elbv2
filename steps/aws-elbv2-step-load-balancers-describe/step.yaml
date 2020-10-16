@@ -17,3 +17,15 @@ build:
   kind: Docker
 publish:
   repository: relaysh/aws-elbv2-step-load-balancers-describe
+
+examples:
+- summary: Describe the load balancers in an AWS account
+  content:
+    apiVersion: 1
+    kind: Step
+    name: elbv2-describe-load-balancers
+    image: relaysh/aws-elbv2-step-load-balancers-describe
+    spec:
+      aws:
+        connection: !Connection { type: aws, name: my-aws-account }
+        region: !Parameter awsRegion
