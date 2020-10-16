@@ -14,3 +14,17 @@ build:
   kind: Docker
 publish:
   repository: relaysh/aws-elbv2-step-load-balancers-delete
+
+examples:
+- summary: Delete a single load balancer from an AWS account
+  content:
+    apiVersion: 1
+    kind: Step
+    name: elbv2-delete-load-balancers
+    image: relaysh/aws-elbv2-step-load-balancers-delete
+    spec:
+      aws:
+        connection: !Connection {type: aws, name: my-aws-account}
+        region: !Parameter awsRegion
+      loadbalancerARNs:
+      - !Parameter loadBalancerArn

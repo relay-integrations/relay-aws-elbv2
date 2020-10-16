@@ -17,3 +17,17 @@ build:
   kind: Docker
 publish:
   repository: relaysh/aws-elbv2-step-targets-describe
+
+examples:
+- summary: Describe targets from a target group in an AWS account
+  content:
+    apiVersion: 1
+    kind: Step
+    name: elbv2-describe-targets
+    image: relaysh/aws-elbv2-step-targets-describe
+    spec:
+      aws:
+        connection: !Connection { type: aws, name: my-aws-account }
+        region: !Parameter awsRegion
+      targetgroups: 
+      - !Parameter targetGroupArn
