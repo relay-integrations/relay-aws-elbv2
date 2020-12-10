@@ -22,11 +22,11 @@ version: v20200408
 
 # The shortest possible accurate description of this integration. Required. May
 # just be the name of the service.
-summary: Amazon Web Services Elastic Load Balancer v2
+summary: AWS ELB v2
 
 # A paragraph or two describing what this integration does. Optional. Markdown.
 description: |
-    Amazon Elastic Load Balancing (ELB) is an automatic application traffic distributor.
+    AWS Elastic Load Balancing (ELB) is an automatic application traffic distributor.
 
 # License information. Optional. If not specified, this integration is assumed
 # to be unlicensed proprietary code. Otherwise, must be a valid SPDX License
