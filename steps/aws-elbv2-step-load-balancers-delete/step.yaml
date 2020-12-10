@@ -4,6 +4,7 @@ name: aws-elbv2-step-load-balancers-delete
 version: 1
 summary: Delete load balancers
 description: |
+    Deletes a provided set of AWS ELB v2 load balancers.
 icon:
 schemas:
   spec:

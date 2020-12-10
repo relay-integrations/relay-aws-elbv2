@@ -4,6 +4,7 @@ name: aws-elbv2-step-load-balancers-describe
 version: 1
 summary: Describe load balancers
 description: |
+    Lists the AWS ELB v2 load balancers. 
 icon:
 schemas:
   spec:

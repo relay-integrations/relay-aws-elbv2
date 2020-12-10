@@ -4,6 +4,7 @@ name: aws-elbv2-step-target-groups-describe
 version: 1
 summary: Describe target groups
 description: |
+    Lists the AWS ELB v2 target groups. 
 icon:
 schemas:
   spec:
